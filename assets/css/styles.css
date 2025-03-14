@@ -6,92 +6,98 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
     color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 header {
-    background: linear-gradient(45deg, #ff5c8e, #f9a12f);
+    background: linear-gradient(135deg, #4f86c6, #97a9d2);  /* Soft blue gradient */
     color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
     text-align: center;
+    margin-top: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    font-size: 1.1rem;
     text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffeb3b;
+    color: #f9c74f;  /* Golden color for a professional but eye-catching hover */
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
+    background-color: #333;
     color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 main {
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 section {
-    margin-bottom: 40px;
-}
-
-#signup-form, #contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 700;
     margin-bottom: 20px;
     color: #333;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
     color: #333;
     text-align: center;
+    letter-spacing: 1px;
 }
 
-#signup, #contact {
+p {
+    font-size: 1.15rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.8;
+}
+
+#signup-form, #contact-form {
+    max-width: 650px;
+    margin: 0 auto;
     background: #fff;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 input[type="text"],
@@ -103,80 +109,102 @@ textarea {
     border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #ff5c8e;
+    border-color: #4f86c6;
+    box-shadow: 0 0 8px rgba(79, 134, 198, 0.3);
     outline: none;
 }
 
 button {
-    background-color: #ff5c8e;
-    color: white;
+    background-color: #4f86c6;
+    color: #fff;
     padding: 15px 25px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.2rem;
     width: 100%;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #f9a12f;
+    background-color: #3688b8;
+    transform: translateY(-3px); /* Slight lift effect */
 }
 
 a.btn {
-    background-color: #ff5c8e;
-    color: #fff;
+    background-color: #f9c74f;
+    color: #333;
     padding: 15px 25px;
     text-decoration: none;
     border-radius: 8px;
     display: inline-block;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 30px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a.btn:hover {
-    background-color: #f9a12f;
+    background-color: #f4a261;
+    transform: translateY(-3px); /* Lift effect for the button */
 }
 
 #example-menu img {
     max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #example-menu img:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Larger shadow for hover */
 }
 
 section p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #555;
-    line-height: 1.8;
     text-align: center;
+    line-height: 1.6;
+    margin-top: 15px;
 }
 
-/* Animation for buttons */
-@keyframes slideIn {
+/* Animation for forms */
+@keyframes fadeIn {
     0% {
-        transform: translateY(30px);
         opacity: 0;
+        transform: translateY(20px);
     }
     100% {
-        transform: translateY(0);
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
-button, a.btn, input[type="text"], input[type="email"], textarea {
-    animation: slideIn 0.5s ease-out;
+#signup-form, #contact-form, .btn, h1, h2 {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .btn, button {
+        font-size: 1rem;
+    }
 }
