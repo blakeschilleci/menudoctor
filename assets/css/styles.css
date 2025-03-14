@@ -90,7 +90,7 @@ p {
     line-height: 1.8;
 }
 
-#signup-form, #contact-form {
+#signup-form, #create-account-form {
     max-width: 650px;
     margin: 0 auto;
     background: #fff;
@@ -100,9 +100,15 @@ p {
     text-align: left;
 }
 
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
 input[type="text"],
 input[type="email"],
-textarea {
+input[type="password"] {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
@@ -115,7 +121,7 @@ textarea {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-textarea:focus {
+input[type="password"]:focus {
     border-color: #4f86c6;
     box-shadow: 0 0 8px rgba(79, 134, 198, 0.3);
     outline: none;
@@ -156,25 +162,21 @@ a.btn:hover {
     transform: translateY(-3px); /* Lift effect for the button */
 }
 
-#example-menu img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#example-menu img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Larger shadow for hover */
-}
-
-section p {
-    font-size: 1.1rem;
-    color: #555;
+.already-have-account {
     text-align: center;
-    line-height: 1.6;
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.already-have-account a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4f86c6;
+}
+
+.already-have-account a:hover {
+    color: #3688b8;
 }
 
 /* Animation for forms */
@@ -189,7 +191,7 @@ section p {
     }
 }
 
-#signup-form, #contact-form, .btn, h1, h2 {
+#signup-form, #create-account-form, .btn, h1, h2 {
     animation: fadeIn 1s ease-out;
 }
 

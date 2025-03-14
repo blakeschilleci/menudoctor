@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Restaurant Menu Redesign</title>
+    <title>Create Account - The Menu Doctor</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -13,31 +13,35 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="example-menu.html">Example Redesigned Menu</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="signup.html">Create Account</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="signup">
-            <h1>Sign Up for Menu Redesign</h1>
-            <form action="#" method="post" id="signup-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <section id="create-account">
+            <h1>Create Your Account</h1>
+            <p>Join The Menu Doctor today and start customizing your restaurant's menu design.</p>
+            
+            <form id="create-account-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-                <label for="restaurant-name">Restaurant Name:</label>
-                <input type="text" id="restaurant-name" name="restaurant-name" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-                <button type="submit">Sign Up</button>
+                <button type="submit" class="btn">Create Account</button>
             </form>
+            
+            <p class="already-have-account">Already have an account? <a href="login.html">Login here</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Restaurant Menu Redesign Service</p>
+        <p>&copy; 2025 Restaurant Menu Redesign Service | All rights reserved.</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
