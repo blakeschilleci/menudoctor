@@ -24,11 +24,13 @@ nav ul {
     list-style: none;
     text-align: center;
     margin-top: 20px;
+    position: relative;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 25px;
+    position: relative;
 }
 
 nav ul li a {
@@ -43,6 +45,43 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #f9c74f;  /* Golden color for a professional but eye-catching hover */
+}
+
+/* Dropdown Menu Styles */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4f86c6; /* Same as header gradient */
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    text-align: left;
+    width: 200px;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f9c74f;
+    color: #fff;
 }
 
 footer {
