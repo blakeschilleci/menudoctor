@@ -64,12 +64,20 @@ section {
     margin-bottom: 50px;
 }
 
+#welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh; /* Take up 70% of the viewport height */
+}
+
 h1 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #333;
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -88,60 +96,7 @@ p {
     color: #555;
     text-align: center;
     line-height: 1.8;
-}
-
-#signup-form, #create-account-form {
-    max-width: 650px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #333;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-    border-color: #4f86c6;
-    box-shadow: 0 0 8px rgba(79, 134, 198, 0.3);
-    outline: none;
-}
-
-button {
-    background-color: #4f86c6;
-    color: #fff;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    width: 100%;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #3688b8;
-    transform: translateY(-3px); /* Slight lift effect */
+    margin-bottom: 20px;
 }
 
 a.btn {
@@ -150,10 +105,7 @@ a.btn {
     padding: 15px 25px;
     text-decoration: none;
     border-radius: 8px;
-    display: inline-block;
-    text-align: center;
     font-size: 1.2rem;
-    margin-top: 30px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -162,24 +114,7 @@ a.btn:hover {
     transform: translateY(-3px); /* Lift effect for the button */
 }
 
-.already-have-account {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #555;
-}
-
-.already-have-account a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #4f86c6;
-}
-
-.already-have-account a:hover {
-    color: #3688b8;
-}
-
-/* Animation for forms */
+/* Animation for elements */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -191,8 +126,19 @@ a.btn:hover {
     }
 }
 
-#signup-form, #create-account-form, .btn, h1, h2 {
+h1, p, .btn {
     animation: fadeIn 1s ease-out;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Responsive Design */
@@ -206,7 +152,7 @@ a.btn:hover {
     h2 {
         font-size: 1.8rem;
     }
-    .btn, button {
+    .btn {
         font-size: 1rem;
     }
 }
